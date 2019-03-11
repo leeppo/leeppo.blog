@@ -162,9 +162,9 @@ menu_settings:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
+#scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -620,7 +620,7 @@ needmoreshare2:
   postbottom:
     enable: true
     options:
-      iconStyle: box
+      iconStyle: default 
       boxForm: horizontal
       position: bottomCenter
       networks: Reddit,Pinterest,Twitter,Facebook,Linkedin,Tumblr,Vkontakte,Weibo,Wechat,QQZone
