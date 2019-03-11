@@ -637,7 +637,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
- google_analytics:
+google_analytics:
    tracking_id: UA-135022888-1
    localhost_ignored: true
 
