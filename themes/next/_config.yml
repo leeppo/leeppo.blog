@@ -180,20 +180,21 @@ site_state: true
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  GitHub: https://github.com/leeppo || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   Twitter: https://twitter.com/reppolexi || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
+  FB Page: https://fb.me/lexireppo|| facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   Instagram: https://instagram.com/reppolexi || instagram
-  #Skype: skype:yourname?call|chat || skype
   Artstation: https://www.artstation.com/leeppo || globe 
   Deviantart: https://www.deviantart.com/re-l-art || deviantart
-
+  Soundcloud: https://soundcloud.com/user-830224719 || soundcloud
+  YouTube: https://www.youtube.com/channel/UCmGknjOIyyFtxJWr8siDGOQ|| youtube
+  GitHub: https://github.com/leeppo || github
+  
 social_icons:
   enable: true
   icons_only: false
@@ -211,7 +212,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  #Title: http://example.com
+  Support me on Patreon: https://www.patreon.com/leeppo
 
 # Sidebar Avatar
 avatar:
@@ -244,7 +245,7 @@ sidebar:
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
   # Pisces | Gemini: 240
-  #width: 300
+  width: 259 
 
   # Sidebar Display, available values (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
@@ -331,10 +332,10 @@ wechat_subscriber:
 # If true, reward would be displayed in every article by default.
 # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
 reward:
-  enable: true
+  enable: false 
   comment: Donate comment here
-  patreon: /images/become_a_patron_button.png
-  #alipay: /images/alipay.jpg
+  #wechatpay: /images/become_a_patron_button.png
+  alipay: /images/become_a_patron_button.png
   #bitcoin: /images/bitcoin.jpg
 
 # Related popular posts
@@ -400,7 +401,7 @@ cheers_enabled: true
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true 
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host:
@@ -413,27 +414,27 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Lato
-    size:
+    family: Fira Mono 
+    size: 12px
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: Fira Mono
     size:
 
   # Font settings for posts.
   # Fallback to `global` font settings.
   posts:
     external: true
-    family:
+    family: Fira Mono
 
   # Font settings for Logo.
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
+    family: IBM Plex Mono
     size:
 
   # Font settings for <code> and code blocks.
@@ -537,9 +538,9 @@ quicklink:
 
 # Disqus
 disqus:
-  enable: false 
+  enable: true 
   shortname: do-while
-  count: true
+  count: false
   lazyload: false
 
 # Changyan
@@ -553,20 +554,22 @@ changyan:
 # More info available at https://valine.js.org
 valine:
   enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  appid: FRRdBqpvEI1iO0w6Od73l4ym-gzGzoHsz # your leancloud application appid
+  appkey: oUf4tOUSSY7CUHWQhmgfAdrm # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
+  #meta: ['nick','mail','link'] # custom comment header
+  lang: en
   pageSize: 10 # pagination size
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+#livere_uid: MTAyMC80Mjk3MC8xOTUxNg==
 
 # Gitment
 # Introduction: https://github.com/imsun/gitment
@@ -604,7 +607,7 @@ gitalk:
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
-#add_this_id:
+#add_this_id: ra-5c860c13223e2e2f 
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
@@ -782,10 +785,10 @@ local_search:
 # Bookmark Support
 # Dependencies: https://github.com/theme-next/theme-next-bookmark
 bookmark:
-  enable: false
+  enable: true
   # If auto, save the reading position when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
-  save: auto
+  save: manual 
 
 # Reading progress bar
 # Dependencies: https://github.com/theme-next/theme-next-reading-progress
@@ -854,11 +857,11 @@ motion:
 # Choose only any one variant, do not need to install both.
 # To install 2.x: https://github.com/theme-next/theme-next-fancybox
 # To install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: false
+fancybox: true 
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: false
+fastclick: true
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
@@ -866,7 +869,7 @@ lazyload: false
 
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
-pace: false
+pace: true
 # Themes list:
 # pace-theme-big-counter | pace-theme-bounce | pace-theme-barber-shop | pace-theme-center-atom
 # pace-theme-center-circle | pace-theme-center-radar | pace-theme-center-simple | pace-theme-corner-indicator
