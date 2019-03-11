@@ -162,8 +162,8 @@ menu_settings:
 
 # Schemes
 #scheme: Muse
-#scheme: Mist
-scheme: Pisces
+scheme: Mist
+#scheme: Pisces
 #scheme: Gemini
 
 
@@ -203,7 +203,7 @@ social_icons:
 # Usage: `permalink || title`
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the title and aria-label name.
-github_banner: https://www.patreon.com/leeppo || Support me on Patreon
+#github_banner: https://www.patreon.com/leeppo || Support me on Patreon
 
 # Blog rolls
 links_icon: link
@@ -220,7 +220,7 @@ avatar:
   # You can also use other linking images.
   url: /images/leeppo.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: true
+  rounded: false 
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
@@ -537,7 +537,7 @@ quicklink:
 
 # Disqus
 disqus:
-  enable: true
+  enable: false 
   shortname: do-while
   count: true
   lazyload: false
