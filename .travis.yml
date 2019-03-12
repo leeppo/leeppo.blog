@@ -37,4 +37,4 @@ install: npm install
 before_script: 
 script:
 - hexo clean
-- hexo g -d
+- hexo g -d --silent
