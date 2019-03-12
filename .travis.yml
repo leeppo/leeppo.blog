@@ -1,10 +1,7 @@
 env:
   global:
   - TZ=Europe/Helsinki
-  - USER="leeppo"
-  - EMAIL="reppolexi@gmail.com"  
-  - REPO="leeppo.github.io"
-  - GH_REPO="github.com/${USER}/${REPO}.git"
+  - GH_REPO="github.com/leeppo/leeppo.github.io.git"
   - secure: mEVlULbnK0XaZ7yE3GB1QR2B9au4V/ZDW47DO1cYrILrcBI7hN+HWlyTQHFcArcfV4iJQmucpGzi4OXIaZ5C5zd+2HWZgsmbdEs0zxAux68E0OV28p0TQ3iv386Vh3xegK7fmfear1sNADXWTtdhxkbFbMwDWFhuIkjfFM08hCMmCSp+mab558Nq/eYLV0PiaZf6NPSZzue0KdeR+FmcGk6rF/rquU8t68/RvZp4zmNvFkmEX73o8dwY2hEG5AWPQc2WxWOR5NF2UNMLotdJqn20y6cvR/3+ZVw1VAPYbbJGWLtKQdQQSD1qlh5YWZhBdjDjopNe5QHDABC/sXWWK/GGsJnQtvQrGfTbZlsORF0PW8EJ/hwxfxT89DiMJLlaCAxhoZlnI2qUMr9AEsuyLEs9D6SMOTjxwQjOCgCJILUsqTES/QNrjmJFQc9OnAMJYYg96p/s4Ab6QNcyVTAgqyHKa4Zc0XWljqIVgDKStnbTgWxurc3GRobvtq4RRJdHQ+fcwrgUuEZaLyKytHupSIfytkH6oO7DdjrN3cab5kPLfECaKcfLL4m853Ha6pbn0IfSjrgaLCACBA1L+LmlshzcE1N3d5aimBu0QHR3/5r0fFc6nlKbV4dxHbkN6IEhI74d3qXAx5DHNCQjbhSOhL7gEY6DooC3AbXU3EJI6Cc=
 language: node_js
 node_js: node
@@ -32,8 +29,8 @@ script:
  - hexo clean && hexo g
 after_script:
  - cd ./public
- - git config user.name ${USER}  
- - git config user.email ${EMAIL} 
+ - git config user.name "leeppo"  
+ - git config user.email "reppolexi@gmail.com" 
  - git init
  - git add .
  - git commit -m "Site updated:`date +"%Y-%m-%d %H:%M:%S"`"
