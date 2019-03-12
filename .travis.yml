@@ -32,9 +32,9 @@ script:
  - hexo clean && hexo g
 after_script:
  - cd ./public
- - git config user.email ${EMAIL}
  - git config user.name ${USER}  
+ - git config user.email ${EMAIL} 
  - git init
  - git add .
  - git commit -m "Site updated:`date +"%Y-%m-%d %H:%M:%S"`"
- - git push -u "https://${ght}@${GH_REPO}" master - f > /dev/null 2>&1  
+ - git push -u "https://${ght}@${GH_REPO}" master - f  
