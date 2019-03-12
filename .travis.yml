@@ -11,7 +11,7 @@ addons:
 
 env:
  global:
-   - TZ=Asia/Tokyo
+   - TZ=Europe/Helsinki
 
 language: node_js
 node_js: node
@@ -32,8 +32,8 @@ cache:
 before_install:
  # Git Config
  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
- - git config --global user.name "YOUR-GITHUB-NAME"
- - git config --global user.email "YOUR-EMAIL"
+ - git config --global user.name "leeppo"
+ - git config --global user.email "reppolexi@gmail.com"
 
  # Restore last modified time
  - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
@@ -42,7 +42,7 @@ before_install:
  - git submodule update --recursive --remote --init
 
  # Deploy history
- - git clone --branch=master --single-branch YOUR-BLOG-REPO .deploy_git
+ - git clone --branch=master --single-branch leeppo.blog .deploy_git
 
  # SSH Setup
  - openssl aes-256-cbc -K $encrypted_693585a97b8c_key -iv $encrypted_693585a97b8c_iv -in deploy_key.enc -out deploy_key -d
