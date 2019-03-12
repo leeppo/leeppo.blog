@@ -538,7 +538,7 @@ quicklink:
 
 # Disqus
 disqus:
-  enable: true 
+  enable: false 
   shortname: do-while
   count: false
   lazyload: false
@@ -553,7 +553,7 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
   appid: FRRdBqpvEI1iO0w6Od73l4ym-gzGzoHsz # your leancloud application appid
   appkey: oUf4tOUSSY7CUHWQhmgfAdrm # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
@@ -562,7 +562,7 @@ valine:
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   #meta: ['nick','mail','link'] # custom comment header
-  lang: en
+  valine.language: en 
   pageSize: 10 # pagination size
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
