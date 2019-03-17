@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://leeppo.github.io
+url: http://releksi.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -102,6 +102,6 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/leeppo/leeppo.github.io
+  repo: https://github.com/releksi/releksi.github.io
   branch:  #published
   message:
