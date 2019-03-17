@@ -16,4 +16,4 @@ I love simple things. Also in art.
 
 I have made this vector wallpaper named "Foxy and the moon" in Figma with love and tea :3
 Hope you will enjoy it.
-Also, this artwork - my first serious expirience with Figma. And i found this tool awesome for vector.
+Also, this artwork - my first serious experience with Figma. And i found this tool awesome for vector.
