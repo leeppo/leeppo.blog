@@ -189,11 +189,11 @@ social:
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   Instagram: https://instagram.com/reppolexi || instagram
-  Artstation: https://www.artstation.com/leeppo || globe 
+  Artstation: https://www.artstation.com/releksi || globe 
   Deviantart: https://www.deviantart.com/re-l-art || deviantart
   Soundcloud: https://soundcloud.com/user-830224719 || soundcloud
   YouTube: https://www.youtube.com/channel/UCmGknjOIyyFtxJWr8siDGOQ|| youtube
-  GitHub: https://github.com/leeppo || github
+  GitHub: https://github.com/releksi || github
   
 social_icons:
   enable: true
@@ -212,7 +212,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  Support me on Patreon: https://www.patreon.com/leeppo
+  Support me on Patreon: https://www.patreon.com/releksi
 
 # Sidebar Avatar
 avatar:
