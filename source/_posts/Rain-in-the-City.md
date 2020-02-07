@@ -20,7 +20,7 @@ This glitching colours  >.<
 Looks weird, isn't it?
 This morning I've spent plenty hours to deal with my gif but ouch. No way. So I've exported pngs from sprite and then convert them to giv via ezgif (ツ) 
 
-![Rain](https://i.imgur.com/ru1nfvx.gif)
+![Rain]()https://i.imgur.com/mO6Kjmk.gif
 But some hours ago I've found an excellent CLI tool by [@kornelski](https://twitter.com/kornelski): https://gif.ski 
 It can create an awesome gifs in seconds by simple command from your pngs. And it's Opensource!
 Check the difference.
