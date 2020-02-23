@@ -14,7 +14,7 @@ categories:
 ---
 Artwork with some lyrics. Only in Russian, because i haven't enough experience for poetry in English  and Finnish atm :(
 
-![Man](https://cdna.artstation.com/p/assets/images/images/016/467/902/large/lexi-reppo-man.jpg)
+![Man](https://i.imgur.com/Lt7nYez.jpg)
 
 <!-- more -->
 
