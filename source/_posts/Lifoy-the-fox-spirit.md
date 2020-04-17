@@ -21,4 +21,13 @@ She likes: tea, rain, look at the stars, cooking, play games (any games literall
 
 She doesn't like: make plans, math, big slugs.
 
-{% link Original size  [1856x1896] available trough my Patreon https://www.patreon.com/posts/lifoy-original-35679306 Patreon %}
+**{% link Original size  [1856x1896] available trough my Patreon https://www.patreon.com/posts/lifoy-original-35679306 Patreon %}**
+
+**Info, tools and items I've used:**
+
+Rebelle;
+Paintstorm Studio;
+Wacom Intuos Pro L;
+12 hours;
+Some folk music like Melnitsa and Danheim.
+Puer (普洱茶) :3 coffee and Earl Grey (especially for morning hours).

@@ -16,7 +16,7 @@ categories:
 ---
 My first artwork that I have made in Rebelle. And my message to all, who still on quarantine these days <3
 Also, here is speedpaint for this artwork.
-![Helsinki](https://i.imgur.com/EZAzjjv.png)
+![Sakura](https://i.imgur.com/EZAzjjv.png)
 
 <!-- more -->
 These days we all feel some stress. Huge or little but it is. So I've painted this peaceful artwork to make your day a bit more soft. Take a cup of tea, sit in the cozy place at your home and allow yourself take some relax. You deserve it. We all deserve it.
@@ -27,7 +27,7 @@ Hugs to all :3
 
 {% youtube wIqm95lFyrk %}
 
-Info, tools and items I've used:
+**Info, tools and items I've used:**
 
 Rebelle;
 Wacom Intuos Pro L;

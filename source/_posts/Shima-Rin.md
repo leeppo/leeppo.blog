@@ -15,7 +15,7 @@ I love nature, I love camping so much. In my childhood every year me and my pare
 
 ![Shima Rin](https://i.imgur.com/wfWqLoJ.png)
 <!-- more -->
-Info, tools and items I've used:
+**Info, tools and items I've used:**
 
 Rebelle;
 Paintstorm Studio;
@@ -24,4 +24,4 @@ Wacom Intuos Pro L;
 Some chill tracks by eevee.
 Puer (普洱茶) :3.
 
-{% link Original size  [4400x3000] available trough my Patreon https://www.patreon.com/posts/rin-shima-from-35488401 Patreon %}
+**{% link Original size  [4400x3000] available trough my Patreon https://www.patreon.com/posts/rin-shima-from-35488401 Patreon %}**

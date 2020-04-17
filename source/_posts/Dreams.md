@@ -14,7 +14,8 @@ categories: artwork
 Runes meanings a lot in my life. Someone can say that it is a fr away from new technological world and it is a sort of..relict. But in fact - all depends on your point of view and your interpretation. May be, if anyone interested I'll write a story about it here :)
 ![Dreams](https://i.imgur.com/JThLtx4.png)
 <!-- more -->
-Info, tools and items I've used:
+**Info, tools and items I've used:**
+
 Paintstorm Studio;
 Wacom Intuos Pro L;
 17 hours;
