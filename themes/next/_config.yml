@@ -189,19 +189,19 @@ social:
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/releksi || twitter
-  FB Page: https://www.facebook.com/apghetto || facebook
+  Twitter: https://twitter.com/alyreppo || twitter
+  FB Page: https://www.facebook.com/alyreppo || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
-  Instagram: https://instagram.com/reppolexi || instagram
-  Artstation: https://www.artstation.com/releksi || globe
-  Deviantart: https://www.deviantart.com/re-l-art || deviantart
-  Soundcloud: https://soundcloud.com/releksi || soundcloud
+  Instagram: https://instagram.com/alypo_art || instagram
+  Artstation: https://www.artstation.com/alypo || globe
+  Deviantart: https://www.deviantart.com/alyreppo || deviantart
+  Soundcloud: https://soundcloud.com/alypo || soundcloud
   YouTube: https://www.youtube.com/channel/UCO3I5S1lU4W1sWMRzub01Aw || youtube
-  GitHub: https://github.com/releksi || github
-  Tumblr: https://releksi.tumblr.com || tumblr
-  Pixiv: https://www.pixiv.net/users/50196105 || external-link
+  GitHub: https://github.com/alypo || github
+  #Tumblr: https://releksi.tumblr.com || tumblr
+  #Pixiv: https://www.pixiv.net/users/50196105 || external-link
 
   #GitHub: https://github.com/yourname || github
   #E-Mail: mailto:yourname@gmail.com || envelope
@@ -228,7 +228,7 @@ links_settings:
 
 links:
   #Title: http://yoursite.com
-  Support me on Patreon: https://www.patreon.com/releksi
+  Support me on Patreon: https://www.patreon.com/alypo
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).

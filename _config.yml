@@ -7,13 +7,13 @@ title: do ... While
 subtitle:
 description:
 keywords:
-author: Lexi Reppo 
+author: Aly Po 
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://releksi.github.io
+url: http://alypo.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -102,6 +102,6 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/releksi/releksi.github.io
+  repo: https://github.com/alypo/alypo.github.io
   branch:  #published
   message:
