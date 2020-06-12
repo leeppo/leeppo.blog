@@ -9,7 +9,10 @@ branches:
   only:
   - master
 before_install:
-install: 
+ - npm install -g hexo
+
+install:
+ - npm install     
  - npm install hexo-generator-searchdb --save
  - npm install hexo-symbols-count-time --save
  - npm install hexo-generator-feed --save
@@ -23,15 +26,20 @@ before_script:
  - git clone https://github.com/theme-next/theme-next-pace source/lib/pace
  - git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark 
  - cd ..
- - cd .. 
+ - cd ..
+ - git config --global user.name 'alypo'
+ - git config --global user.email 'reppolexi@gmail.com'
+  
 script:
  - hexo -version
  - hexo clean && hexo g
 after_script:
- - cd ./public
- - git config user.name "alypo"  
- - git config user.email "reppolexi@gmail.com" 
- - git init
- - git add .
+ - mkdir .deploy                   # Create a folder to use for teh pages branch
+ - cd .deploy
+ - git clone --depth 1 --branch gh-pages --single-branch $DEPLOY_REPO . || (git init && git remote add -t gh-pages origin $DEPLOY_REPO)
+ - rm -rf ./*                      # Clear old verion
+ - cp -r ../public/* .             # Copy over files for new version
+ - git add -A .          
  - git commit -m "Site updated:`date +"%Y-%m-%d %H:%M:%S"`"
- - git push -u "https://${ght}@${GH_REPO}" master -f  
+ - git branch -m gh-pages
+ - git push -q -u origin gh-pages  # Push silently so we don't leak information
