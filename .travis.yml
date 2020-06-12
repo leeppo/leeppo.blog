@@ -2,36 +2,22 @@ env:
   global:
   - TZ=Europe/Helsinki
   - GH_REPO="github.com/alypo/alypo.github.io.git"
-  - secure: mEVlULbnK0XaZ7yE3GB1QR2B9au4V/ZDW47DO1cYrILrcBI7hN+HWlyTQHFcArcfV4iJQmucpGzi4OXIaZ5C5zd+2HWZgsmbdEs0zxAux68E0OV28p0TQ3iv386Vh3xegK7fmfear1sNADXWTtdhxkbFbMwDWFhuIkjfFM08hCMmCSp+mab558Nq/eYLV0PiaZf6NPSZzue0KdeR+FmcGk6rF/rquU8t68/RvZp4zmNvFkmEX73o8dwY2hEG5AWPQc2WxWOR5NF2UNMLotdJqn20y6cvR/3+ZVw1VAPYbbJGWLtKQdQQSD1qlh5YWZhBdjDjopNe5QHDABC/sXWWK/GGsJnQtvQrGfTbZlsORF0PW8EJ/hwxfxT89DiMJLlaCAxhoZlnI2qUMr9AEsuyLEs9D6SMOTjxwQjOCgCJILUsqTES/QNrjmJFQc9OnAMJYYg96p/s4Ab6QNcyVTAgqyHKa4Zc0XWljqIVgDKStnbTgWxurc3GRobvtq4RRJdHQ+fcwrgUuEZaLyKytHupSIfytkH6oO7DdjrN3cab5kPLfECaKcfLL4m853Ha6pbn0IfSjrgaLCACBA1L+LmlshzcE1N3d5aimBu0QHR3/5r0fFc6nlKbV4dxHbkN6IEhI74d3qXAx5DHNCQjbhSOhL7gEY6DooC3AbXU3EJI6Cc=
+  - secure: ukpF7NGJQa2pX2ARa1diS7pGCEJxqPHw4DQtDvOMhaI6n3xIgCQpPqZqhtY6WIJ0scuIs2UJ7ZxlmayfWHpnm7TOiOkwMfvHcF6JUxIbUScedFi+lrnJjaRXODi0ZWgQTck+FUneP/3FceZ/XHVHs9ivIB9OF/6vMeoH1o1oUIKcvBRSM54h7ThwYBJia+77mrhJCo8D96T6IWQJb3eyQD2RyCtH+x84rNN4XPMXeVZuJHx3Z5B7oXRbNragDs7qnn1Cds/BxNuSC2gKb3MVM65gc+jMe1++EVvx7AVfYkLZ7BC4n9Q8ajnGLY/+JnWoKVPeS0rivjRVhaJc3dqCusQo/vBO4dzo4fBS91gggzSfFO5G091kcamp8pTG5Zy/ykVVkkdrC2EvbBZJOy9LqlnWp0PrGeE0D0aRcJ20krRiqNeMwlG/8A0RvsoVNmCrTHYI0hpi+E4w6Dd+IQaZ5b6hK2YHsVVWB7kMr4AsGT1Bmch0QxYkaOfhgY5XXv4koHnrBC/1kXDvTEN+Zg2yDIg9VTC0taFKP70fiyeKFwkImcoR2Q2tHVqbiKVeRQu2DiK9cH217KWut5GV5VifBuWPIITriYVSAvMd7FxzLkPST5ONSiyGFfwvzta5dpID489xN6iVDEylfMJxKBQGJGBwiyfeYE8V/vwoFJq6qvk=
 language: node_js
 node_js: node
 branches:
   only:
   - master
 before_install:
-install: 
- - npm install hexo-generator-searchdb --save
- - npm install hexo-symbols-count-time --save
- - npm install hexo-generator-feed --save
- - npm install hexo-wordcount --save
- - npm install hexo-related-popular-posts --save
+- npm install -g hexo-cli
+install:
+- npm install
 before_script: 
- - cd themes/next
- - git clone https://github.com/theme-next/theme-next-fancybox source/lib/fancybox
- - git clone https://github.com/theme-next/theme-next-fastclick source/lib/fastclick
- - git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton
- - git clone https://github.com/theme-next/theme-next-pace source/lib/pace
- - git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark 
- - cd ..
- - cd .. 
 script:
- - hexo -version
- - hexo clean && hexo g
-after_script:
- - cd ./public
- - git config user.name "alypo"  
- - git config user.email "reppolexi@gmail.com" 
- - git init
- - git add .
- - git commit -m "Site updated:`date +"%Y-%m-%d %H:%M:%S"`"
- - git push -u "https://${ght}@${GH_REPO}" master -f  
+- hexo clean && hexo g
+after_success:
+- git config --global user.name 'alypo'
+- git config --global user.email 'reppolexi@gmail.com'
+- sed -i'' - sed -i'' "s~https://github.com/alypo/alypo.github.io~https://${REPO_TOKEN}@github.com/alypo/alypo.github.io.git~"
+  _config.yml
+- hexo d
