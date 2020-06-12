@@ -15,10 +15,7 @@ function njkCompile(data) {
     return dictionary;
   });
   env.addFilter('json', dictionary => {
-    if (typeof dictionary !== 'undefined' && dictionary !== null) {
-      return JSON.stringify(dictionary);
-    }
-    return '""';
+    return JSON.stringify(dictionary || '');
   });
   return nunjucks.compile(data.text, env, data.path);
 }
