@@ -2,17 +2,15 @@ env:
   global:
   - TZ=Europe/Helsinki
   - GH_REPO="github.com/alypo/alypo.github.io.git"
-  - secure: mEVlULbnK0XaZ7yE3GB1QR2B9au4V/ZDW47DO1cYrILrcBI7hN+HWlyTQHFcArcfV4iJQmucpGzi4OXIaZ5C5zd+2HWZgsmbdEs0zxAux68E0OV28p0TQ3iv386Vh3xegK7fmfear1sNADXWTtdhxkbFbMwDWFhuIkjfFM08hCMmCSp+mab558Nq/eYLV0PiaZf6NPSZzue0KdeR+FmcGk6rF/rquU8t68/RvZp4zmNvFkmEX73o8dwY2hEG5AWPQc2WxWOR5NF2UNMLotdJqn20y6cvR/3+ZVw1VAPYbbJGWLtKQdQQSD1qlh5YWZhBdjDjopNe5QHDABC/sXWWK/GGsJnQtvQrGfTbZlsORF0PW8EJ/hwxfxT89DiMJLlaCAxhoZlnI2qUMr9AEsuyLEs9D6SMOTjxwQjOCgCJILUsqTES/QNrjmJFQc9OnAMJYYg96p/s4Ab6QNcyVTAgqyHKa4Zc0XWljqIVgDKStnbTgWxurc3GRobvtq4RRJdHQ+fcwrgUuEZaLyKytHupSIfytkH6oO7DdjrN3cab5kPLfECaKcfLL4m853Ha6pbn0IfSjrgaLCACBA1L+LmlshzcE1N3d5aimBu0QHR3/5r0fFc6nlKbV4dxHbkN6IEhI74d3qXAx5DHNCQjbhSOhL7gEY6DooC3AbXU3EJI6Cc=
+  - secure: "WvTIzHUp37kyhV9hlQo+BQHh4LNJmp7a447ZUlPK4LkpLDshyZfJ6OPz2Vj8S/MQ/ONA8/VI0IVX7wWbUOsm28EFszJxPojsUdTGb7UtDV/B5x3C0WdWJXLnWhsUvF08QlY25/RtjDFUajTcufwnwEFE/z3yZGgKxr6YU7Xj2Dt6cBtKfkrhhOhOzhXWtsvyun7vXtw6RczORlh7jC78SOdh3U4kzO4CXoA8BVllstI7QQbVJ86RjiUBHa+c0a18jXdmSe3FZBrrPOqzHmogOMl4pJ2/NAq7CvSmOmrrIuKO5wUMdITNA3qGGtJFoAsq5H8T2SQ1JXuk9LevOkhTs6xENi+i/4jVY9M1S5yUmyg7J9h6MwBdFIuQzl0fyxWIEunULqLPiu+tVSb8IstsrsG8nhjNrPT8Fn45Z99zmsNjF7dWmbaPJbdshhf2UbK1dEQ717ke5cl+bpvrYxqnb1WLm7NjxqF3yoqeHfrzPLFp/hroFICH/lY0tKCrLuOnxZn4eG+uOCbSOP5GEgIfVhd3N867E21GFDYh+LaYkSW5CKL89hNJBRQMWF9TKPNcxsndH22v0DaBWOpD1nKyzskmGxgc+zdmmo6vv2r3UaglvrHuz7URE9W6ZpjT43IGgdozUgPkAG2ChLU3bOiKTikt8bWhsGzqbY7AwIJkgDg="
+
 language: node_js
 node_js: node
 branches:
   only:
   - master
 before_install:
- - npm install -g hexo
-
-install:
- - npm install     
+install: 
  - npm install hexo-generator-searchdb --save
  - npm install hexo-symbols-count-time --save
  - npm install hexo-generator-feed --save
@@ -26,20 +24,15 @@ before_script:
  - git clone https://github.com/theme-next/theme-next-pace source/lib/pace
  - git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark 
  - cd ..
- - cd ..
- - git config --global user.name 'alypo'
- - git config --global user.email 'reppolexi@gmail.com'
-  
+ - cd .. 
 script:
  - hexo -version
  - hexo clean && hexo g
 after_script:
- - mkdir .deploy                   # Create a folder to use for teh pages branch
- - cd .deploy
- - git clone --depth 1 --branch gh-pages --single-branch $DEPLOY_REPO . || (git init && git remote add -t gh-pages origin $DEPLOY_REPO)
- - rm -rf ./*                      # Clear old verion
- - cp -r ../public/* .             # Copy over files for new version
- - git add -A .          
+ - cd ./public
+ - git config user.name "alypo"  
+ - git config user.email "reppolexi@gmail.com" 
+ - git init
+ - git add .
  - git commit -m "Site updated:`date +"%Y-%m-%d %H:%M:%S"`"
- - git branch -m gh-pages
- - git push -q -u origin gh-pages  # Push silently so we don't leak information
+ - git push -u "https://${ght}@${GH_REPO}" master -f 
