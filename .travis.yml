@@ -3,7 +3,9 @@ env:
   - TZ=Europe/Helsinki
   - secure: ukpF7NGJQa2pX2ARa1diS7pGCEJxqPHw4DQtDvOMhaI6n3xIgCQpPqZqhtY6WIJ0scuIs2UJ7ZxlmayfWHpnm7TOiOkwMfvHcF6JUxIbUScedFi+lrnJjaRXODi0ZWgQTck+FUneP/3FceZ/XHVHs9ivIB9OF/6vMeoH1o1oUIKcvBRSM54h7ThwYBJia+77mrhJCo8D96T6IWQJb3eyQD2RyCtH+x84rNN4XPMXeVZuJHx3Z5B7oXRbNragDs7qnn1Cds/BxNuSC2gKb3MVM65gc+jMe1++EVvx7AVfYkLZ7BC4n9Q8ajnGLY/+JnWoKVPeS0rivjRVhaJc3dqCusQo/vBO4dzo4fBS91gggzSfFO5G091kcamp8pTG5Zy/ykVVkkdrC2EvbBZJOy9LqlnWp0PrGeE0D0aRcJ20krRiqNeMwlG/8A0RvsoVNmCrTHYI0hpi+E4w6Dd+IQaZ5b6hK2YHsVVWB7kMr4AsGT1Bmch0QxYkaOfhgY5XXv4koHnrBC/1kXDvTEN+Zg2yDIg9VTC0taFKP70fiyeKFwkImcoR2Q2tHVqbiKVeRQu2DiK9cH217KWut5GV5VifBuWPIITriYVSAvMd7FxzLkPST5ONSiyGFfwvzta5dpID489xN6iVDEylfMJxKBQGJGBwiyfeYE8V/vwoFJq6qvk=
 language: node_js
-node_js: node
+node_js:
+  - 10 # use nodejs v10 LTS
+cache: npm
 branches:
   only:
   - master
@@ -18,5 +20,4 @@ script:
 after_success:
 - git config --global user.name 'alypo'
 - git config --global user.email 'reppolexi@gmail.com'
-- sed -i'' "s~https://github.com/alypo/alypo.github.io~https://${REPO_TOKEN}@github.com/alypo/alypo.github.io.git~" _config.yml
 - hexo d

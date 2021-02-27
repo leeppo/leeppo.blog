@@ -103,5 +103,6 @@ feed:
 deploy:
   type: git
   repo: https://github.com/alypo/alypo.github.io
+  token: ${REPO_TOKEN}
   branch:  #published
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm') }}"
