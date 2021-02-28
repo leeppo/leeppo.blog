@@ -7,6 +7,8 @@ tags:
  - Tarlioh
  - OC
  - Sowili
+ - foxgirl
+categories: artwork
 ---
 One of my OC. Her name is Sôwili, she is a spirit, one of two sisters who look after a young world named Tarlioh.
 ![Sôwili](https://cdnb.artstation.com/p/assets/images/images/027/618/769/large/aly-reppo-foxyava-fin-crop-new.jpg)

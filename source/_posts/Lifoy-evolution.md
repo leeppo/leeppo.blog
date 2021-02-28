@@ -9,6 +9,7 @@ tags:
  - anime
  - Lifoy
  - Tarlioh
+categories: artwork
 ---
 Last time I felt into the furry fandom a bit, so I've reviewed my vision of character.
 
