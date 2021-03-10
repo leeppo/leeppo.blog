@@ -12,7 +12,7 @@ categories: artwork
 ---
 I've fall in love with EVE: Online in 2009 year. Since this time I'm playing this game (with breaks ofc). I owe EVE a lot of funny moments, tons of positive and good vibe. Also I found new friends there <3
 
-![Mira](https://i.imgur.com/4ZKsMWm.jpg)
+![Mira](https://i.imgur.com/HIeDMPC.jpg)
 <!-- more -->
 
 ![Mirasketch](https://i.imgur.com/3syNYre.jpg)
