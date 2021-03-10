@@ -1,7 +1,7 @@
 ---
 title: Mona fanart
 date: 2021-02-27 21:57:48
-tagsi:
+tags:
  - digitalwater
  - RPS
  - fanart
@@ -18,6 +18,7 @@ Just a best girl from an awesome game. Love her so so much <3
 ![Mona2](https://i.imgur.com/ZeEX2kN.jpg)
 
 I didn't post here a whole last year, but now it's time to ressurection. I promise that from this moment this place will be alive :3
+
 **Info, tools and items I've used:**
 
 Realistic Paint Studio;
