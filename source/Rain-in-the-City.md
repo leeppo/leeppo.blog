@@ -7,6 +7,7 @@ tags:
  - mood
  - animation
  - life
+ - rain
 categories: 
  - artwork
  - diary
